@@ -84,7 +84,6 @@ func parseFloat(query url.Values, key string) float64 {
 	return value
 }
 
-// Formulas preserved without changes.
 func calcMargin(sig1, sig2, ps, b float64) map[string]interface{} {
 	const delta = 0.05
 	pMin, pMax := ps-ps*delta, ps+ps*delta
